@@ -1,4 +1,4 @@
 #!/usr/local/bin/python3.10
-import tuto2
+from tuto2_tablex_aligned import tablex
 
-tuto2.tablex(2,0,10)
+tablex(2,1,100)
