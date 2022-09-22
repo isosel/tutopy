@@ -12,15 +12,19 @@ def convertFintoC(a):
 
 while(quit == False):
 	txt = input("\t\nEntrez une température svp: ")
+	
 	if txt in quittuple :
 		print("\t\nOk!")
 		quit = True
+		sleep(1)
 		continue
+
 	print("\t\nOn continue.")
+
 	if not txt[0].isnumeric():
 		print("\t\nFormat invalide... exemple: 12C ou 45F")
-		continue
 		sleep(1)
+		continue
 	
 	if txt[-1] == 'C' or txt[-1] == 'c':
 		txt = txt[:-1]
